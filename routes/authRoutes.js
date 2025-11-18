@@ -24,7 +24,7 @@ router.get('/auth/github/callback',
         
         const token = generateToken(req.user);
         
-        const frontendUrl = 'http://localhost:4200';
+        const frontendUrl = 'https://zarkshortener.netlify.app';
         
         res.redirect(`${frontendUrl}/auth-success?token=${token}`);
     }
